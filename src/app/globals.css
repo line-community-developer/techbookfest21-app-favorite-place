@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* LINE のブランドカラー。ボタンや見出しのアクセントに使う */
+@theme {
+  --color-line: #06c755;
+  --color-line-dark: #05a447;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+}

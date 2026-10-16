@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- リッチメニュー画像の元データ。各 .menu を 2500x843 でスクリーンショットして <id>.png に保存する -->
+<html lang="ja"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0}
+body{font-family:"Hiragino Sans","Noto Sans JP",sans-serif;background:#ddd}
+.menu{width:2500px;height:843px;display:flex;margin-bottom:20px}
+.cell{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;color:#fff;border-right:6px solid rgba(255,255,255,.35)}
+.cell:last-child{border-right:0}
+.cell .i{font-size:230px;line-height:1}
+.cell .t{font-size:104px;font-weight:800;letter-spacing:.04em}
+.cell .s{font-size:52px;opacity:.85}
+.g1{background:#06c755}.g2{background:#00a37a}.g3{background:#3b6fd8}.g4{background:#e8a400}.g5{background:#8b968f}.g6{background:#ef6c4a}
+.help{background:#f4faf6;color:#15201a;padding:70px 110px;flex-direction:row;justify-content:space-between;align-items:center}
+.help ol{font-size:74px;line-height:1.75;font-weight:700;padding-left:90px}
+.help ol span{color:#04702f;font-weight:900;text-decoration:underline;text-decoration-thickness:8px;text-underline-offset:14px}
+.help .back{background:#06c755;color:#fff;border-radius:60px;padding:50px 90px;font-size:96px;font-weight:800;white-space:nowrap}
+</style></head><body>
+<div class="menu" id="idle">
+  <div class="cell g1"><div class="i">📍</div><div class="t">場所を登録</div></div>
+  <div class="cell g3"><div class="i">🗺</div><div class="t">地図で見る</div></div>
+  <div class="cell g5"><div class="i">❓</div><div class="t">使い方</div><div class="s">タブ切り替え</div></div>
+</div>
+<div class="menu help" id="help">
+  <ol>
+    <li><span>「場所を登録」</span>を押す</li>
+    <li><span>位置情報</span>を送る</li>
+    <li><span>写真・コメント</span>を送って<span>「終了」</span></li>
+  </ol>
+  <div class="back">‹ もどる</div>
+</div>
+<div class="menu" id="awaiting_location">
+  <div class="cell g1"><div class="i">📍</div><div class="t">位置情報を送る</div></div>
+  <div class="cell g5"><div class="i">✖️</div><div class="t">やめる</div></div>
+</div>
+<div class="menu" id="registered">
+  <div class="cell g6"><div class="i">📷</div><div class="t">写真を送る</div></div>
+  <div class="cell g3"><div class="i">💬</div><div class="t">コメントを書く</div></div>
+  <div class="cell g4"><div class="i">✅</div><div class="t">終了</div></div>
+</div>
+</body></html>
